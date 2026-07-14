@@ -1,5 +1,5 @@
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import { BiNetworkChart } from 'react-icons/Bi';
+import { BiNetworkChart } from 'react-icons/bi';
 import { MdOutlineAnalytics, MdEmail, MdOutlineFlightTakeoff, MdHealthAndSafety } from 'react-icons/md';
 
 const Projects = () => {
