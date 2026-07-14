@@ -1,137 +1,30 @@
-import { useRef, useEffect, useState } from 'react';
 import { FiArrowDown, FiArrowRight, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
-/* ── Falling Stars Canvas ───────────────────────────────── */
-const StarCanvas = ({ active }) => {
-  const canvasRef = useRef(null);
-  const starsRef = useRef([]);
-  const rafRef = useRef(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-
-    const resize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
-    };
-    resize();
-
-    if (!active) {
-      cancelAnimationFrame(rafRef.current);
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      starsRef.current = [];
-      return;
-    }
-
-    const spawnStar = () => {
-      starsRef.current.push({
-        x: Math.random() * canvas.width,
-        y: -12,
-        size: Math.random() * 2.5 + 0.5,
-        speedY: Math.random() * 2.5 + 1.2,
-        speedX: (Math.random() - 0.5) * 0.6,
-        opacity: 0.9,
-        decay: Math.random() * 0.012 + 0.006,
-        twinkle: Math.random() > 0.6,
-        twinkleSpeed: Math.random() * 0.08 + 0.03,
-        twinklePhase: Math.random() * Math.PI * 2,
-      });
-    };
-
-    let frame = 0;
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      if (frame % 2 === 0) spawnStar();
-      frame++;
-
-      starsRef.current = starsRef.current.filter((s) => s.opacity > 0 && s.y < canvas.height + 20);
-
-      starsRef.current.forEach((s) => {
-        s.y += s.speedY;
-        s.x += s.speedX;
-        s.opacity -= s.decay;
-        s.twinklePhase += s.twinkleSpeed;
-
-        const alpha = s.twinkle
-          ? s.opacity * (0.6 + 0.4 * Math.sin(s.twinklePhase))
-          : s.opacity;
-
-        ctx.save();
-        ctx.globalAlpha = Math.max(0, alpha);
-        ctx.fillStyle = '#f0d0dc';
-
-        // 4-pointed star shape
-        const r = s.size;
-        ctx.beginPath();
-        ctx.moveTo(s.x, s.y - r * 2.5);
-        ctx.lineTo(s.x + r * 0.5, s.y - r * 0.5);
-        ctx.lineTo(s.x + r * 2.5, s.y);
-        ctx.lineTo(s.x + r * 0.5, s.y + r * 0.5);
-        ctx.lineTo(s.x, s.y + r * 2.5);
-        ctx.lineTo(s.x - r * 0.5, s.y + r * 0.5);
-        ctx.lineTo(s.x - r * 2.5, s.y);
-        ctx.lineTo(s.x - r * 0.5, s.y - r * 0.5);
-        ctx.closePath();
-        ctx.fill();
-        ctx.restore();
-      });
-
-      rafRef.current = requestAnimationFrame(animate);
-    };
-
-    animate();
-    return () => {
-      cancelAnimationFrame(rafRef.current);
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      starsRef.current = [];
-    };
-  }, [active]);
-
-  return (
-    <canvas
-      ref={canvasRef}
-      style={{
-        position: 'absolute',
-        inset: 0,
-        width: '100%',
-        height: '100%',
-        pointerEvents: 'none',
-        zIndex: 10,
-        borderRadius: 'inherit',
-      }}
-    />
-  );
-};
-
-/* ── Hero ───────────────────────────────────────────────── */
 const Hero = () => {
-  const [hovered, setHovered] = useState(false);
-
   return (
     <>
-      {/* ══ SECTION 1: Fullscreen — just photo + VANSHIKA ══ */}
+      {/* ══ SECTION 1: Fullscreen — just photo + VANSHIKA text ══ */}
       <section className="hero-splash" id="home" aria-label="Hero">
-        {/* Giant VANSHIKA watermark — behind everything */}
-        <div className="splash-name-watermark" aria-hidden="true">VANSHIKA</div>
-
-        {/* Centered photo */}
-        <div
-          className={`splash-photo-wrap ${hovered ? 'hovered' : ''}`}
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-        >
-          <StarCanvas active={hovered} />
+        {/* Fullscreen background image */}
+        <div className="splash-bg-container">
           <img
             src="/profile.jpg"
             alt="Vanshika Yadav"
-            className="splash-photo"
+            className="splash-bg-image"
             onError={(e) => {
               e.target.src =
-                'https://ui-avatars.com/api/?name=Vanshika+Yadav&size=600&background=2a2a2a&color=f0d0dc&bold=true&font-size=0.28';
+                'https://ui-avatars.com/api/?name=Vanshika+Yadav&size=1200&background=111111&color=e8b4c8&bold=true&font-size=0.25';
             }}
           />
+          {/* Subtle gradient overlay to blend into the dark theme and highlight text */}
+          <div className="splash-overlay" aria-hidden="true" />
+        </div>
+
+        {/* Big name overlay - positioned near chest/bottom area to avoid face collision */}
+        <div className="splash-name-container">
+          <h1 className="splash-name-title">
+            <span className="name-word-bg">VANSHIKA</span>
+          </h1>
         </div>
 
         {/* Scroll cue */}
