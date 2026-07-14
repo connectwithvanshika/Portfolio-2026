@@ -8,10 +8,10 @@ import Footer from './components/Footer';
 import './index.css';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
-    const saved = localStorage.getItem('portfolio-theme') || 'light';
+    const saved = localStorage.getItem('portfolio-theme') || 'dark';
     setTheme(saved);
     document.documentElement.setAttribute('data-theme', saved);
   }, []);
