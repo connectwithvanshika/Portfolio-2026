@@ -14,7 +14,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
       <div className="container nav-container">
         <a href="#" className="logo" aria-label="Vanshika Yadav - Home">
-          V<span>.</span>
+          VANSHIKA<span>.</span>
         </a>
 
         <div className="nav-right">
