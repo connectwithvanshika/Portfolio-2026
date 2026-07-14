@@ -3,28 +3,36 @@ import { FiArrowDown, FiArrowRight, FiGithub, FiLinkedin, FiMail } from 'react-i
 const Hero = () => {
   return (
     <>
-      {/* ══ SECTION 1: Fullscreen — just photo + VANSHIKA text ══ */}
-      <section className="hero-splash" id="home" aria-label="Hero">
-        {/* Fullscreen background image */}
-        <div className="splash-bg-container">
-          <img
-            src="/profile.jpg"
-            alt="Vanshika Yadav"
-            className="splash-bg-image"
-            onError={(e) => {
-              e.target.src =
-                'https://ui-avatars.com/api/?name=Vanshika+Yadav&size=1200&background=111111&color=e8b4c8&bold=true&font-size=0.25';
-            }}
-          />
-          {/* Subtle gradient overlay to blend into the dark theme and highlight text */}
-          <div className="splash-overlay" aria-hidden="true" />
-        </div>
+      {/* ══ SECTION 1: Fullscreen Magazine Cover ══ */}
+      <section className="hero-splash" id="home" aria-label="Hero Cover">
+        <div className="splash-magazine-frame">
+          {/* Top metadata tags */}
+          <div className="splash-meta-header">
+            <span className="meta-tag">Creative Developer</span>
+            <span className="meta-tag">AI/ML Analyst</span>
+            <span className="meta-tag">Est. 2024</span>
+          </div>
 
-        {/* Big name overlay - positioned near chest/bottom area to avoid face collision */}
-        <div className="splash-name-container">
-          <h1 className="splash-name-title">
-            <span className="name-word-bg">VANSHIKA</span>
-          </h1>
+          {/* Giant Title "VANSHIKA" - layered behind the photo slightly */}
+          <h1 className="splash-magazine-title">VANSHIKA</h1>
+
+          {/* Centered vertical poster image */}
+          <div className="splash-poster-container">
+            <img
+              src="/profile.jpg"
+              alt="Vanshika Yadav"
+              className="splash-poster-image"
+              onError={(e) => {
+                e.target.src =
+                  'https://ui-avatars.com/api/?name=Vanshika+Yadav&size=800&background=161616&color=e8b4c8&bold=true&font-size=0.25';
+              }}
+            />
+            {/* Custom overlay/badge inside photo */}
+            <div className="poster-badge" aria-hidden="true">
+              <span className="badge-dot"></span>
+              <span className="badge-text">V.Y. PORTFOLIO</span>
+            </div>
+          </div>
         </div>
 
         {/* Scroll cue */}
