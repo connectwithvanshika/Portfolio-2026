@@ -1,68 +1,79 @@
+const Marquee = ({ text, count = 6, reverse = false }) => (
+  <div className="marquee-section" aria-hidden="true">
+    <div className={`marquee-track ${reverse ? 'reverse' : ''}`}>
+      {Array.from({ length: count }).map((_, i) => (
+        <span key={i} className="marquee-word">
+          {text}<span className="marquee-dot"> .</span>{' '}
+        </span>
+      ))}
+    </div>
+  </div>
+);
+
 const About = () => {
   const skills = {
-    languages: ['HTML', 'CSS', 'JavaScript', 'Python', 'SQL', 'Machine Learning'],
-    tools: ['React', 'Pandas', 'NumPy', 'MySQL', 'Figma', 'Tableau'],
-    specialties: ['LLM', 'LangChain', 'RAG', 'GenAI', 'LangGraph', 'NLP', 'n8n']
+    'Languages & Core': ['HTML', 'CSS', 'JavaScript', 'Python', 'SQL', 'Machine Learning'],
+    'Libraries & Tools': ['React', 'Pandas', 'NumPy', 'MySQL', 'Figma', 'Tableau'],
+    'AI & Specialized': ['LLM', 'LangChain', 'RAG', 'GenAI', 'LangGraph', 'NLP', 'n8n'],
   };
 
   return (
-    <section id="about" className="section">
-      <div className="container">
-        <h2 className="section-title">About Me</h2>
+    <section id="about" className="section about-section">
+      {/* Corner crosshairs */}
+      <div className="crosshair tl" aria-hidden="true" />
+      <div className="crosshair tr" aria-hidden="true" />
+      <div className="crosshair bl" aria-hidden="true" />
+      <div className="crosshair br" aria-hidden="true" />
+
+      <Marquee text="about" />
+
+      <div className="container" style={{ marginTop: '5rem' }}>
+        <p className="section-label">Who I am</p>
+        <h2 className="section-heading" style={{ color: '#ffffff' }}>
+          My Journey
+        </h2>
+
         <div className="about-grid">
+          {/* Left — story + education */}
           <div className="about-text">
-            <h3>My Journey</h3>
             <p>
-              I am an AI/ML Enthusiast and Data Analyst currently pursuing a Bachelor of Engineering 
+              I am an AI/ML Enthusiast and Data Analyst currently pursuing a Bachelor of Engineering
               in Artificial Intelligence at Newton School Of Technology, Rishihood University.
             </p>
             <p>
-              I am passionate about creating AI-powered solutions, ranging from machine learning models 
-              to agentic systems and analytics pipelines. I have hands-on experience with Python, Pandas, 
-              NumPy, React, and various LLM frameworks.
+              I am passionate about creating AI-powered solutions — from machine learning models
+              to agentic systems and analytics pipelines. I have hands-on experience with Python,
+              Pandas, NumPy, React, and various LLM frameworks.
             </p>
-            <h3 style={{ marginTop: '2rem', fontSize: '1.5rem' }}>Education</h3>
-            <ul style={{ color: 'var(--text-secondary)' }}>
-              <li style={{ marginBottom: '1rem' }}>
-                <strong style={{ color: 'var(--text-primary)' }}>Bachelor of Engineering (Artificial Intelligence)</strong><br />
-                Newton School Of Technology, Rishihood University (2024 - 2028)<br />
-                Grade: 7.7/10.0
-              </li>
-              <li>
-                <strong style={{ color: 'var(--text-primary)' }}>Intermediate (Class XII)</strong><br />
-                Vedantic International School (2023 - 2024)<br />
-                Grade: 91.0%
-              </li>
-            </ul>
-          </div>
-          
-          <div className="about-skills">
-            <div className="skills-container">
-              <div className="skill-category">
-                <h4>Languages & Core</h4>
-                <div className="skill-tags">
-                  {skills.languages.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
+
+            <h3>Education</h3>
+
+            <div className="edu-list">
+              <div className="edu-item">
+                <p className="edu-num">01</p>
+                <p className="edu-title">Bachelor of Engineering — Artificial Intelligence</p>
+                <p className="edu-sub">Newton School Of Technology, Rishihood University · 2024–2028 · GPA: 7.7/10</p>
               </div>
-              <div className="skill-category">
-                <h4>Libraries & Tools</h4>
-                <div className="skill-tags">
-                  {skills.tools.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
-              </div>
-              <div className="skill-category">
-                <h4>AI & Specialized</h4>
-                <div className="skill-tags">
-                  {skills.specialties.map((skill, index) => (
-                    <span key={index} className="skill-tag">{skill}</span>
-                  ))}
-                </div>
+              <div className="edu-item">
+                <p className="edu-num">02</p>
+                <p className="edu-title">Intermediate (Class XII)</p>
+                <p className="edu-sub">Vedantic International School · 2023–2024 · 91.0%</p>
               </div>
             </div>
+          </div>
+
+          {/* Right — skills */}
+          <div className="about-skills">
+            {Object.entries(skills).map(([category, list]) => (
+              <div className="skills-block" key={category}>
+                <p className="skill-category-name">{category}</p>
+                <div className="skill-pills">
+                  {list.map((s) => (
+                    <span key={s} className="skill-pill">{s}</span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
