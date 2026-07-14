@@ -2,6 +2,19 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { BiNetworkChart } from 'react-icons/bi';
 import { MdOutlineAnalytics, MdEmail, MdOutlineFlightTakeoff, MdHealthAndSafety } from 'react-icons/md';
 
+/* Pixel text marquee — uses monospace CSS font */
+const PixelMarquee = () => (
+  <div className="pixel-marquee-wrap" aria-hidden="true">
+    <div className="pixel-marquee-track">
+      {Array.from({ length: 8 }).map((_, i) => (
+        <span key={i} className="pixel-marquee-item">
+          &lt;PROJECTS/&gt;<span className="pixel-dot">_</span>
+        </span>
+      ))}
+    </div>
+  </div>
+);
+
 const Marquee = ({ text, count = 6, reverse = false }) => (
   <div className="marquee-section" aria-hidden="true">
     <div className={`marquee-track ${reverse ? 'reverse' : ''}`}>
@@ -61,7 +74,10 @@ const Projects = () => (
   <section id="projects" className="section projects-section">
     <Marquee text="projects" />
 
-    <div className="container" style={{ marginTop: '5rem' }}>
+    {/* Pixel-style retro heading band */}
+    <PixelMarquee />
+
+    <div className="container" style={{ marginTop: '4rem' }}>
       <p className="section-label">What I've built</p>
       <h2 className="section-heading">Featured Projects</h2>
 

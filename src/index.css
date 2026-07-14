@@ -1232,22 +1232,50 @@ li { list-style: none; }
   letter-spacing: 0.05em;
 }
 
+/* ─── Pixel Marquee (Projects) ────────────────────────── */
+.pixel-marquee-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1.2rem 0;
+  background: var(--text-primary);
+  margin: 0;
+}
+
+.pixel-marquee-track {
+  display: inline-block;
+  animation: marqueeScroll 20s linear infinite;
+}
+
+.pixel-marquee-item {
+  display: inline-block;
+  font-family: 'Courier New', 'Lucida Console', monospace;
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bg-primary);
+  margin-right: 2rem;
+  opacity: 0.85;
+}
+
+[data-theme='dark'] .pixel-marquee-item {
+  color: var(--bg-primary);
+}
+
+.pixel-dot {
+  color: var(--accent-light);
+  animation: cursorBlink 1s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 /* ─── Responsive ──────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .hero-wrapper {
-    grid-template-columns: 1fr;
+  .hero-info-inner {
     text-align: center;
-    padding-top: 2rem;
-  }
-
-  .hero-left {
-    order: 2;
-    padding: 2rem 0;
-  }
-
-  .hero-right {
-    order: 1;
-    padding: 2rem 0;
   }
 
   .hero-label {
@@ -1256,9 +1284,13 @@ li { list-style: none; }
 
   .hero-label::before { display: none; }
 
-  .hero-desc, .hero-stats {
+  .hero-desc {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero-stats {
+    justify-content: center;
   }
 
   .hero-actions {
@@ -1267,11 +1299,6 @@ li { list-style: none; }
 
   .hero-socials {
     justify-content: center;
-  }
-
-  .hero-img-wrap {
-    width: 320px;
-    height: 400px;
   }
 
   .about-grid {
