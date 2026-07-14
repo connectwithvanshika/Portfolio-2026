@@ -10,6 +10,18 @@ const Marquee = ({ text, count = 6, reverse = false }) => (
   </div>
 );
 
+const PixelMarquee = ({ text }) => (
+  <div className="pixel-marquee-wrap" aria-hidden="true">
+    <div className="pixel-marquee-track">
+      {Array.from({ length: 8 }).map((_, i) => (
+        <span key={i} className="pixel-marquee-item">
+          &lt;{text}/&gt;<span className="pixel-dot">_</span>
+        </span>
+      ))}
+    </div>
+  </div>
+);
+
 const experiences = [
   {
     title: 'HPAIR Delegate',
@@ -70,6 +82,11 @@ const Experience = () => (
           </div>
         ))}
       </div>
+    </div>
+
+    {/* Pixel-style retro heading band at bottom */}
+    <div style={{ marginTop: '5rem' }}>
+      <PixelMarquee text="EXPERIENCE" />
     </div>
   </section>
 );
