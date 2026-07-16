@@ -49,6 +49,12 @@ const experiences = [
   date: '2025',
   desc: 'Selected as a delegate for the 18th Asia World Model United Nations (AYIMUN) Conference held in Kuala Lumpur, Malaysia.',
 },
+{
+  title: 'AWMUN Delegate',
+  org: 'Asia World Model United Nations (AWMUN)',
+  date: '2025',
+  desc: 'Selected as a delegate for the 12th Asia World Model United Nations (AWMUN XII) Conference held in Bali, Indonesia.',
+},
   {
     title: 'Break The Case Finalist',
     org: 'BITS Pilani, Hyderabad Campus',
