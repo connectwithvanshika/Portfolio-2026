@@ -44,7 +44,7 @@ const Footer = () => (
           <FiGithub /> GitHub
         </a>
         <a
-          href="#"
+          href="https://leetcode.com/u/vanshika_bytes/"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-social-btn"
