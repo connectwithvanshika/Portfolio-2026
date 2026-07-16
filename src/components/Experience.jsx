@@ -43,6 +43,12 @@ const experiences = [
   date: '2025',
   desc: 'Accepted to attend the AFS Youth Assembly 2025, hosted at New York University (NYU), New York, USA, bringing together young leaders and changemakers from around the world.',
 },
+{
+  title: 'AYIMUN Delegate',
+  org: 'Asia World Model United Nations (AYIMUN)',
+  date: '2025',
+  desc: 'Selected as a delegate for the 18th Asia World Model United Nations (AYIMUN) Conference held in Kuala Lumpur, Malaysia.',
+},
   {
     title: 'Break The Case Finalist',
     org: 'BITS Pilani, Hyderabad Campus',
