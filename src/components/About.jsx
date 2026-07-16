@@ -39,6 +39,10 @@ const About = () => {
 
       <Marquee text="about" />
 
+       <div style={{ marginTop: '5rem' }}>
+        <PixelMarquee text="ABOUT" />
+      </div>
+
       <div className="container" style={{ marginTop: '5rem' }}>
         <p className="section-label">Who I am</p>
         <h2 className="section-heading" style={{ color: '#ffffff' }}>
@@ -91,9 +95,7 @@ const About = () => {
       </div>
 
       {/* Pixel-style retro heading band at bottom */}
-      <div style={{ marginTop: '5rem' }}>
-        <PixelMarquee text="ABOUT" />
-      </div>
+  
     </section>
   );
 };
