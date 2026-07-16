@@ -75,7 +75,7 @@ const Projects = () => (
     <Marquee text="projects" />
 
     {/* Pixel-style retro heading band */}
-    <PixelMarquee />
+    {/* <PixelMarquee /> */}
 
     <div className="container" style={{ marginTop: '4rem' }}>
       <p className="section-label">What I've built</p>
