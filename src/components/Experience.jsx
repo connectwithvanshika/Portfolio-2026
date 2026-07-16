@@ -149,8 +149,9 @@ const Experience = () => (
                       target="_blank"
                       rel="noopener noreferrer"
                       className="proof-btn"
+                      color = 'white'
                     >
-                      📄 {item.proof.label}
+                     {item.proof.label}
                     </a>
                 )}
                     </div>
