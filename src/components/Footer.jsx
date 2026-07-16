@@ -53,6 +53,16 @@ const Footer = () => (
         >
           <SiLeetcode /> LeetCode
         </a>
+        <a
+            href="https://www.kaggle.com/crystalbaby"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-social-btn"
+            id="footer-kaggle-btn"
+            aria-label="Kaggle"
+          >
+            <SiKaggle /> Kaggle
+          </a>
       </div>
 
       <p className="footer-credit">
