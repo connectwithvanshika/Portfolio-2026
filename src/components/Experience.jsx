@@ -22,6 +22,8 @@ const PixelMarquee = ({ text }) => (
   </div>
 );
 
+
+
 const experiences = [
   {
   title: 'SDE Intern',
@@ -90,10 +92,8 @@ const Experience = () => (
       </div>
     </div>
 
-    {/* Pixel-style retro heading band at bottom */}
-    <div style={{ marginTop: '5rem' }}>
-      <PixelMarquee text="EXPERIENCE" />
-    </div>
+
+
   </section>
 );
 

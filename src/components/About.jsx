@@ -81,7 +81,6 @@ const About = () => {
                 <p className="edu-title">High School (Class X)</p>
                 <p className="edu-sub">Vedantic International School · 2021-2022 · 95.4%</p>
               </div>
-
             </div>
           </div>
 
@@ -100,8 +99,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* Pixel-style retro heading band at bottom */}
   
     </section>
   );
