@@ -29,7 +29,8 @@ const experiences = [
   title: 'SDE Intern',
   org: '6D Technologies',
   date: 'June 2026 - July 2026',
-  desc: 'Worked as a Software Development Engineer Intern in the Development-Messaging team, contributing to software solutions and gaining hands-on experience in enterprise-scale telecom and messaging systems.'
+  desc: 'Worked as a Software Development Engineer Intern in the Development-Messaging team, contributing to software solutions and gaining hands-on experience in enterprise-scale telecom and messaging systems.',
+  proof: 'https://drive.google.com/file/d/xxxxx/view'
 },
   {
   title: 'HPAIR Delegate & ACONF Participant',
