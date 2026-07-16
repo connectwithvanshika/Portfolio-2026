@@ -37,6 +37,7 @@ const experiences = [
   org: 'Harvard Project for Asian International Relations (HPAIR)',
   date: 'August 2025 – 2026',
   desc: 'Selected as a global delegate for HPAIR Asia 2025, hosted by Harvard University at the University of Tokyo, Japan, and chosen to participate in ACONF 2026, engaging with emerging leaders and policymakers from around the world.',
+  proof: 'https://drive.google.com/file/d/xxxxx/view
 },
 {
   title: 'Youth Assembly Delegate',
