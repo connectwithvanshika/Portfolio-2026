@@ -1,5 +1,5 @@
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
-import { SiLeetcode } from 'react-icons/si';
+import { SiLeetcode , SiKaggle} from 'react-icons/si';
 
 const Footer = () => (
   <footer id="contact" className="footer-section">
