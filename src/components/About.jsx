@@ -49,7 +49,7 @@ const About = () => {
           {/* Left — story + education */}
           <div className="about-text">
             <p>
-              I am an AI/ML Enthusiast and Data Analyst currently pursuing a Bachelor of Engineering
+              I am an AI/ML Enthusiast and Data Analyst currently pursuing a B.Tech
               in Artificial Intelligence at Newton School Of Technology, Rishihood University.
             </p>
             <p>
@@ -63,13 +63,13 @@ const About = () => {
             <div className="edu-list">
               <div className="edu-item">
                 <p className="edu-num">01</p>
-                <p className="edu-title">Bachelor of Engineering — Artificial Intelligence</p>
-                <p className="edu-sub">Newton School Of Technology, Rishihood University · 2024–2028 · GPA: 7.7/10</p>
+                <p className="edu-title">Bachelor of Technology — Artificial Intelligence</p>
+                <p className="edu-sub">Newton School Of Technology, Rishihood University · 2024-2028 · GPA: 8.2/10</p>
               </div>
               <div className="edu-item">
                 <p className="edu-num">02</p>
                 <p className="edu-title">Intermediate (Class XII)</p>
-                <p className="edu-sub">Vedantic International School · 2023–2024 · 91.0%</p>
+                <p className="edu-sub">Vedantic International School · 2023-2024 · 91.0%</p>
               </div>
             </div>
           </div>
