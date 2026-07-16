@@ -24,11 +24,17 @@ const PixelMarquee = ({ text }) => (
 
 const experiences = [
   {
-    title: 'HPAIR Delegate',
-    org: 'Harvard Project for Asian International Relations',
-    date: 'August 2025',
-    desc: 'Selected as a global delegate for HPAIR Asia 2025, hosted by Harvard University at the University of Tokyo, Japan.',
-  },
+  title: 'SDE Intern',
+  org: '6D Technologies',
+  date: 'June 2026 - July 2026',
+  desc: 'Worked as a Software Development Engineer Intern in the Development-Messaging team, contributing to software solutions and gaining hands-on experience in enterprise-scale telecom and messaging systems.'
+},
+  {
+  title: 'HPAIR Delegate & ACONF Participant',
+  org: 'Harvard Project for Asian International Relations (HPAIR)',
+  date: 'August 2025 – 2026',
+  desc: 'Selected as a global delegate for HPAIR Asia 2025, hosted by Harvard University at the University of Tokyo, Japan, and chosen to participate in ACONF 2026, engaging with emerging leaders and policymakers from around the world.',
+},
   {
     title: 'Break The Case Finalist',
     org: 'BITS Pilani, Hyderabad Campus',
