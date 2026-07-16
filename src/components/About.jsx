@@ -75,6 +75,13 @@ const About = () => {
                 <p className="edu-title">Intermediate (Class XII)</p>
                 <p className="edu-sub">Vedantic International School · 2023-2024 · 91.0%</p>
               </div>
+
+              <div className="edu-item">
+                <p className="edu-num">03</p>
+                <p className="edu-title">High School (Class X)</p>
+                <p className="edu-sub">Vedantic International School · 2021-2022 · 95.4%</p>
+              </div>
+
             </div>
           </div>
 
