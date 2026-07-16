@@ -16,7 +16,7 @@ const Footer = () => (
 
       <div className="footer-socials" aria-label="Social links">
         <a
-          href="mailto:vanshika.yadav2024@nst.rishihood.edu.in"
+          href="mailto:vanshika.connects@gmail.com"
           className="footer-social-btn"
           id="footer-email-btn"
           aria-label="Send Email"
