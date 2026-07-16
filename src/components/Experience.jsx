@@ -101,10 +101,21 @@ const Experience = () => (
             <div className="exp-left">
               <span className="exp-num">{String(i + 1).padStart(2, '0')}</span>
               <div className="exp-content">
-                <h3>{item.title}</h3>
-                <h4>{item.org}</h4>
-                <p>{item.desc}</p>
-              </div>
+                  <h3>{item.title}</h3>
+                  <h4>{item.org}</h4>
+                  <p>{item.desc}</p>
+
+                  {item.proof && (
+                    <a
+                      href={item.proof.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="proof-btn"
+                    >
+                      📄 {item.proof.label}
+                    </a>
+                )}
+                    </div>
             </div>
             {item.date && (
               <div className="exp-right">
