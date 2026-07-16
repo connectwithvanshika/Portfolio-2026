@@ -44,6 +44,7 @@ const experiences = [
   org: 'AFS Youth Assembly — New York University (NYU)',
   date: '2025',
   desc: 'Accepted to attend the AFS Youth Assembly 2025, hosted at New York University (NYU), New York, USA, bringing together young leaders and changemakers from around the world.',
+  proof: 'https://drive.google.com/file/d/xxxxx/view'
 },
 {
   title: 'AYIMUN Delegate',
