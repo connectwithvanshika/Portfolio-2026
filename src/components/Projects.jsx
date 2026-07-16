@@ -32,8 +32,8 @@ const projects = [
     title: 'Loan Approval Prediction System',
     description: 'Built and deployed an interactive ML web app to predict loan approval based on applicant financial data. Achieved ~83% model accuracy.',
     tech: ['Python', 'Scikit-learn', 'Streamlit', 'Logistic Regression'],
-    github: '#',
-    demo: '#',
+    github: 'https://github.com/connectwithvanshika/Loan-Approval-System',
+    demo: 'https://loan-approval-system-43quagetfp79mm7gnqrv9q.streamlit.app/',
     icon: <BiNetworkChart />,
   },
   {
