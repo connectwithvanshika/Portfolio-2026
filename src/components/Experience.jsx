@@ -26,65 +26,103 @@ const PixelMarquee = ({ text }) => (
 
 const experiences = [
   {
-  title: 'SDE Intern',
-  org: '6D Technologies',
-  date: 'June 2026 - July 2026',
-  desc: 'Worked as a Software Development Engineer Intern in the Development-Messaging team, contributing to software solutions and gaining hands-on experience in enterprise-scale telecom and messaging systems.',
-  proof: {
-  url: "https://...",
-  label: "Acceptance Letter"
-}
-},
+    title: 'SDE Intern',
+    org: '6D Technologies',
+    date: 'June 2026 - July 2026',
+    desc: 'Worked as a Software Development Engineer Intern in the Development-Messaging team, contributing to software solutions and gaining hands-on experience in enterprise-scale telecom and messaging systems.',
+    proof: {
+      url: 'https://your-offer-letter-link',
+      label: 'View Offer Letter'
+    }
+  },
+
   {
-  title: 'HPAIR Delegate & ACONF Participant',
-  org: 'Harvard Project for Asian International Relations (HPAIR)',
-  date: 'August 2025 – 2026',
-  desc: 'Selected as a global delegate for HPAIR Asia 2025, hosted by Harvard University at the University of Tokyo, Japan, and chosen to participate in ACONF 2026, engaging with emerging leaders and policymakers from around the world.',
-  proof: 'https://drive.google.com/file/d/xxxxx/view'
-},
-{
-  title: 'Youth Assembly Delegate',
-  org: 'AFS Youth Assembly — New York University (NYU)',
-  date: '2025',
-  desc: 'Accepted to attend the AFS Youth Assembly 2025, hosted at New York University (NYU), New York, USA, bringing together young leaders and changemakers from around the world.',
-  proof: 'https://drive.google.com/file/d/xxxxx/view'
-},
-{
-  title: 'AYIMUN Delegate',
-  org: 'Asia World Model United Nations (AYIMUN)',
-  date: '2025',
-  desc: 'Selected as a delegate for the 18th Asia World Model United Nations (AYIMUN) Conference held in Kuala Lumpur, Malaysia.',
-},
-{
-  title: 'AWMUN Delegate',
-  org: 'Asia World Model United Nations (AWMUN)',
-  date: '2025',
-  desc: 'Selected as a delegate for the 12th Asia World Model United Nations (AWMUN XII) Conference held in Bali, Indonesia.',
-},
+    title: 'HPAIR Delegate & ACONF Participant',
+    org: 'Harvard Project for Asian International Relations (HPAIR)',
+    date: 'August 2025 – 2026',
+    desc: 'Selected as a global delegate for HPAIR Asia 2025, hosted by Harvard University at the University of Tokyo, Japan, and chosen to participate in ACONF 2026, engaging with emerging leaders and policymakers from around the world.',
+    proof: {
+      url: 'https://your-hpair-letter-link',
+      label: 'View Acceptance Letter'
+    }
+  },
+
+  {
+    title: 'Youth Assembly Delegate',
+    org: 'AFS Youth Assembly — New York University (NYU)',
+    date: '2025',
+    desc: 'Accepted to attend the AFS Youth Assembly 2025, hosted at New York University (NYU), New York, USA, bringing together young leaders and changemakers from around the world.',
+    proof: {
+      url: 'https://your-afs-letter-link',
+      label: 'View Acceptance Letter'
+    }
+  },
+
+  {
+    title: 'AYIMUN Delegate',
+    org: 'Asia World Model United Nations (AYIMUN)',
+    date: '2025',
+    desc: 'Selected as a delegate for the 18th Asia World Model United Nations (AYIMUN) Conference held in Kuala Lumpur, Malaysia.',
+    proof: {
+      url: 'https://your-ayimun-letter-link',
+      label: 'View Acceptance Letter'
+    }
+  },
+
+  {
+    title: 'AWMUN Delegate',
+    org: 'Asia World Model United Nations (AWMUN)',
+    date: '2025',
+    desc: 'Selected as a delegate for the 12th Asia World Model United Nations (AWMUN XII) Conference held in Bali, Indonesia.',
+    proof: {
+      url: 'https://your-awmun-letter-link',
+      label: 'View Acceptance Letter'
+    }
+  },
+
   {
     title: 'Break The Case Finalist',
     org: 'BITS Pilani, Hyderabad Campus',
     date: 'October 2025',
     desc: "Qualified for the Final Round of Break The Case '25, one of India's premier national case competitions organized by the BITS Hyderabad Consulting Group.",
+    proof: {
+      url: 'https://your-certificate-link',
+      label: 'View Certificate'
+    }
   },
+
   {
     title: 'Super Contributor',
     org: 'Hacktoberfest 2025',
     date: '2025',
     desc: 'Contributed significantly to open-source with 16 merged pull requests across various projects.',
+    proof: {
+      url: 'https://your-hacktoberfest-link',
+      label: 'View Badge'
+    }
   },
+
   {
     title: 'Paper Presentation Finalist',
     org: 'National Students\' Space Challenge — IIT Kharagpur',
     date: '2025',
     desc: 'Selected as a finalist for the Paper Presentation at the National Students\' Space Challenge (NSSC) organized by IIT Kharagpur.',
+    proof: {
+      url: 'https://your-nssc-proof-link',
+      label: 'View Certificate'
+    }
   },
+
   {
     title: 'Certifications',
     org: 'Infosys & Google Cloud Skills Boost',
     date: 'May 2025',
     desc: 'Data Science (Infosys): Core concepts of data science, analysis & visualization. Generative AI (Google Cloud): Fundamentals of generative AI, models, and workflows.',
-  },
+    proof: {
+      url: 'https://your-certificates-link',
+      label: 'View Credentials'
+    }
+  }
 ];
 
 const Experience = () => (
