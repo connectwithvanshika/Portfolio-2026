@@ -20,6 +20,7 @@ const Navbar = ({ theme, toggleTheme }) => {
         <div className="nav-right">
           <div className="nav-links">
             <a href="#about" id="nav-about">About</a>
+            <a href="#international-exposure" id="nav-international-exposure">International</a>
             <a href="#experience" id="nav-experience">Experience</a>
             <a href="#projects" id="nav-projects">Projects</a>
             <a href="#contact" id="nav-contact">Contact</a>
