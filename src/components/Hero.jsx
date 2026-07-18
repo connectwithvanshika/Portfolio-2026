@@ -85,7 +85,7 @@ const Hero = () => {
             </div>
             <div className="stat-item">
               <h3><span>16+</span></h3>
-              <p>Open Source PRs</p>
+              <p>Open Source PRs merged - Hacktober Fest</p>
             </div>
             <div className="stat-item">
               <h3><span>8.2</span></h3>
