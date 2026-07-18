@@ -79,6 +79,11 @@ const About = () => {
     'n8n',
     'Vercel',
     'Netlify'
+  ],
+  'International Recognition': [
+    'HPAIR',
+    'ACONF',
+    'AYIMUN'
   ]
 };
 
