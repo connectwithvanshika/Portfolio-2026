@@ -125,14 +125,14 @@ const About = () => {
               </div>
               <div className="edu-item">
                 <p className="edu-num">02</p>
-                <p className="edu-title">Intermediate (Class XII)</p>
-                <p className="edu-sub">Vedantic International School · 2023-2024 · 91.0%</p>
+                <p className="edu-title">Intermediate (Class XII) - CBSE</p>
+                <p className="edu-sub">91.0%</p>
               </div>
 
               <div className="edu-item">
                 <p className="edu-num">03</p>
-                <p className="edu-title">High School (Class X)</p>
-                <p className="edu-sub">Vedantic International School · 2021-2022 · 95.4%</p>
+                <p className="edu-title">High School (Class X) - CBSE</p>
+                <p className="edu-sub">95.4%</p>
               </div>
             </div>
           </div>
