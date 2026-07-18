@@ -937,7 +937,46 @@ li { list-style: none; }
 
 /* ─── Experience ──────────────────────────────────────── */
 .exp-section {
-  background: var(--bg-primary);
+  background: var(--bg-dark-section);
+  color: var(--text-on-dark);
+  
+  --text-primary: #f0ece4;
+  --text-secondary: #aaaaaa;
+  --text-muted: #666666;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.15);
+  --pill-bg: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme='dark'] .exp-section {
+  background: #090909;
+}
+
+.exp-section .marquee-word {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.4);
+}
+
+.exp-section .section-heading {
+  color: #ffffff;
+}
+
+.exp-section .section-label {
+  color: var(--accent-light);
+}
+
+.proof-btn {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  transition: var(--transition-fast);
+}
+
+.proof-btn:hover {
+  color: #ffffff;
 }
 
 .exp-list {
