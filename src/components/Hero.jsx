@@ -45,7 +45,7 @@ const Hero = () => {
       {/* ══ SECTION 2: Info — scrolls below the fold ══ */}
       <section className="hero-info" id="hero-info" aria-label="Introduction">
         <div className="container hero-info-inner">
-          <p className="hero-label">Available for Freelancing and Project opportunities</p>
+          <p className="hero-label">Available for opportunities</p>
 
           <h1 className="hero-title">
             <span className="name-line">Vanshika</span>
