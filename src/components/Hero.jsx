@@ -80,16 +80,16 @@ const Hero = () => {
 
           <div className="hero-stats">
             <div className="stat-item">
-              <h3><span>5</span>+</h3>
+              <h3><span>10+</span>+</h3>
               <p>ML Projects Shipped</p>
             </div>
             <div className="stat-item">
-              <h3><span>16</span></h3>
+              <h3><span>16+</span></h3>
               <p>Open Source PRs</p>
             </div>
             <div className="stat-item">
-              <h3><span>7.7</span></h3>
-              <p>GPA at NST</p>
+              <h3><span>8.2</span></h3>
+              <p>SGPA at NST</p>
             </div>
           </div>
         </div>
