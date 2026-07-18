@@ -10,7 +10,7 @@ const Hero = () => {
           {/* Top metadata tags */}
           <div className="splash-meta-header">
             <span className="meta-tag">Creative Developer</span>
-            <span className="meta-tag">AI/ML Analyst</span>
+            <span className="meta-tag">AI/ML Enthusiast</span>
             <span className="meta-tag">Est. 2024</span>
           </div>
 

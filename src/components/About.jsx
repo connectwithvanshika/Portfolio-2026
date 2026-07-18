@@ -38,7 +38,6 @@ const About = () => {
   'Frontend & Backend': [
     'React',
     'Next.js',
-    'Tailwind CSS',
     'Node.js',
     'Express.js',
     'REST APIs',
@@ -147,7 +146,8 @@ const About = () => {
                   {list.map((s) => (
                     <span key={s} className="skill-pill">{s}</span>
                   ))}
-                </div>
+
+              </div>
               </div>
             ))}
           </div>
