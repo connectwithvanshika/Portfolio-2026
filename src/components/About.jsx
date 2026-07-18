@@ -24,10 +24,64 @@ const PixelMarquee = ({ text }) => (
 
 const About = () => {
   const skills = {
-    'Languages & Core': ['HTML', 'CSS', 'JavaScript', 'Python', 'SQL', 'Machine Learning'],
-    'Libraries & Tools': ['React', 'Pandas', 'NumPy', 'MySQL', 'Figma', 'Tableau'],
-    'AI & Specialized': ['LLM', 'LangChain', 'RAG', 'GenAI', 'LangGraph', 'NLP', 'n8n'],
-  };
+  'Languages & Core': [
+    'Python',
+    'JavaScript',
+    'TypeScript',
+    'HTML',
+    'CSS',
+    'SQL',
+    'Machine Learning',
+    'Data Structures & Algorithms'
+  ],
+
+  'Frontend & Backend': [
+    'React',
+    'Next.js',
+    'Tailwind CSS',
+    'Node.js',
+    'Express.js',
+    'REST APIs',
+    'JWT Authentication'
+  ],
+
+  'Data Science & Analytics': [
+    'Pandas',
+    'NumPy',
+    'Scikit-learn',
+    'Matplotlib',
+    'Seaborn',
+    'Tableau',
+    'MySQL'
+  ],
+
+  'AI & GenAI': [
+    'LLMs',
+    'Prompt Engineering',
+    'LangChain',
+    'LangGraph',
+    'RAG',
+    'Vector Databases',
+    'Embeddings',
+    'NLP',
+    'AI Agents',
+    'GenAI',
+    'OpenAI API',
+    'Google Gemini API'
+  ],
+
+  'Developer Tools': [
+    'Git',
+    'GitHub',
+    'VS Code',
+    'Postman',
+    'Docker',
+    'Figma',
+    'n8n',
+    'Vercel',
+    'Netlify'
+  ]
+};
 
   return (
     <section id="about" className="section about-section">
