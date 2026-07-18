@@ -1,4 +1,5 @@
 import { FiArrowDown, FiArrowRight, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import { SiKaggle } from "react-icons/si";
 
 const Hero = () => {
   return (
@@ -30,7 +31,7 @@ const Hero = () => {
             {/* Custom overlay/badge inside photo */}
             <div className="poster-badge" aria-hidden="true">
               <span className="badge-dot"></span>
-              <span className="badge-text">V.Y. PORTFOLIO</span>
+              <span className="badge-text">Explore my work</span>
             </div>
           </div>
         </div>
@@ -44,7 +45,7 @@ const Hero = () => {
       {/* ══ SECTION 2: Info — scrolls below the fold ══ */}
       <section className="hero-info" id="hero-info" aria-label="Introduction">
         <div className="container hero-info-inner">
-          <p className="hero-label">Available for opportunities</p>
+          <p className="hero-label">Available for Freelancing and Project opportunities</p>
 
           <h1 className="hero-title">
             <span className="name-line">Vanshika</span>
@@ -76,6 +77,16 @@ const Hero = () => {
             <a href="mailto:vanshika.yadav2024@nst.rishihood.edu.in" className="social-pill" id="hero-email" aria-label="Email">
               <FiMail />
             </a>
+            <a
+                    href="https://www.kaggle.com/crystalbaby"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-pill"
+                    id="hero-kaggle"
+                    aria-label="Kaggle"
+                  >
+                    <SiKaggle />
+                  </a>
           </div>
 
           <div className="hero-stats">
