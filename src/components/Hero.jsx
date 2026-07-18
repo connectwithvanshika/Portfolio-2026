@@ -103,8 +103,8 @@ const Hero = () => {
               <p>SGPA at NST</p>
             </div>
             <div className="stat-item">
-                <h3><span>3</span>+</h3>
-                <p>Freelance Projects in Progress</p>
+                <h3><span>2026</span>+</h3>
+                <p>Currently Accepting Freelance Projects</p>
               </div>
           </div>
         </div>
