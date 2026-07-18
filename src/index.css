@@ -789,6 +789,10 @@ li { list-style: none; }
   background: #090909;
 }
 
+.about-section .marquee-word {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.4);
+}
+
 .about-section .section-heading,
 .about-section .section-label {
   color: #ffffff;
