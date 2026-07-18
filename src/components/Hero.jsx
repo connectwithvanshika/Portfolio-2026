@@ -102,6 +102,10 @@ const Hero = () => {
               <h3><span>8.2</span></h3>
               <p>SGPA at NST</p>
             </div>
+            <div className="stat-item">
+                <h3><span>3</span>+</h3>
+                <p>Freelance Projects in Progress</p>
+              </div>
           </div>
         </div>
       </section>
