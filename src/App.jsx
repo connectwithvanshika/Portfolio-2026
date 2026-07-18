@@ -5,6 +5,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import InternationalExposure from './components/InternationalExposure';
 import './index.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Hero />
       <About />
+      <InternationalExposure />
       <Experience />
       <Projects />
       <Footer />
