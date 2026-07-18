@@ -685,7 +685,7 @@ li { list-style: none; }
 }
 
 .stat-item p {
-  font-size: 0.78rem;
+  font-size: 0.80rem;
   color: var(--text-muted);
   margin-top: 0.25rem;
   max-width: 130px;
