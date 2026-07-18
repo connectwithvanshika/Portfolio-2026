@@ -68,7 +68,7 @@ const About = () => {
               <div className="edu-item">
                 <p className="edu-num">01</p>
                 <p className="edu-title">Bachelor of Technology — Computer Science and Artificial Intelligence</p>
-                <p className="edu-sub">Newton School Of Technology, Rishihood University · 2024-2028 · GPA: 8.25/10</p>
+                <p className="edu-sub">Newton School Of Technology, Rishihood University · 2024-2028 · GPA: 8.2/10</p>
               </div>
               <div className="edu-item">
                 <p className="edu-num">02</p>
