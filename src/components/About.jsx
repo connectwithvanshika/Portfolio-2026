@@ -39,9 +39,9 @@ const About = () => {
 
       <Marquee text="about" />
 
-       <div style={{ marginTop: '5rem' }}>
+       {/* <div style={{ marginTop: '5rem' }}>
         <PixelMarquee text="ABOUT" />
-      </div>
+      </div> */}
 
       <div className="container" style={{ marginTop: '5rem' }}>
         <p className="section-label">Who I am</p>
@@ -54,7 +54,7 @@ const About = () => {
           <div className="about-text">
             <p>
               I am an AI/ML Enthusiast and Data Analyst currently pursuing a B.Tech
-              in Artificial Intelligence at Newton School Of Technology, Rishihood University.
+              in Artificial Intelligence at Newton School Of Technology.
             </p>
             <p>
               I am passionate about creating AI-powered solutions — from machine learning models
