@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
+import { FaGlobeAmericas, FaTrophy, FaHandshake, FaGraduationCap, FaMapMarkerAlt } from 'react-icons/fa';
 
 // Marquee component reused and adjusted for this section
 const Marquee = ({ text, count = 6, reverse = false }) => (
@@ -51,7 +52,7 @@ const programs = [
     status: "Selected",
     year: "2025",
     desc: "Selected to participate in one of Asia's leading student leadership conferences, engaging with global policymakers, entrepreneurs, and researchers.",
-    flag: "🇮🇳",
+    icon: <FaMapMarkerAlt />,
     location: "New Delhi, India",
     proof: { label: "View Invitation", url: "#" }
   },
@@ -62,7 +63,7 @@ const programs = [
     status: "Selected",
     year: "2026",
     desc: "Chosen to participate in an international innovation and leadership conference alongside students from multiple countries.",
-    flag: "🌏",
+    icon: <FaMapMarkerAlt />,
     location: "Global",
     proof: { label: "View Acceptance", url: "#" }
   },
@@ -73,7 +74,7 @@ const programs = [
     status: "Selected",
     year: "2025",
     desc: "Selected as an international delegate to participate in diplomatic discussions and global policy simulations.",
-    flag: "🇲🇾",
+    icon: <FaMapMarkerAlt />,
     location: "Kuala Lumpur, Malaysia",
     proof: { label: "View Certificate", url: "#" }
   },
@@ -84,7 +85,7 @@ const programs = [
     status: "Summer Cohort",
     year: "2025",
     desc: "Selected for an international AI research program focused on machine learning, research methodology, and collaborative AI development.",
-    flag: "🌐",
+    icon: <FaMapMarkerAlt />,
     location: "International",
     proof: { label: "View Offer Letter", url: "#" }
   }
@@ -100,7 +101,7 @@ const InternationalExposure = () => {
       <div className="container" style={{ marginTop: '5rem' }}>
         <p className="section-label">International Exposure</p>
         <h2 className="section-heading" style={{ maxWidth: '800px', fontSize: 'clamp(2.2rem, 5vw, 4rem)' }}>
-          Representing my work through globally recognized conferences, research programs, and international communities.
+          Recognized Globally
         </h2>
 
         {/* Statistics Section */}
@@ -112,7 +113,7 @@ const InternationalExposure = () => {
             transition={{ duration: 0.6 }}
             className="int-stat-item"
           >
-            <div className="stat-icon">🌎</div>
+            <div className="stat-icon"><FaGlobeAmericas /></div>
             <h3><AnimatedCounter end={4} suffix="+" /></h3>
             <p>International Programs</p>
           </motion.div>
@@ -123,7 +124,7 @@ const InternationalExposure = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="int-stat-item"
           >
-            <div className="stat-icon">🏆</div>
+            <div className="stat-icon"><FaTrophy /></div>
             <h3><AnimatedCounter end={100} suffix="%" /></h3>
             <p>Selection Rate</p>
           </motion.div>
@@ -134,7 +135,7 @@ const InternationalExposure = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="int-stat-item"
           >
-            <div className="stat-icon">🤝</div>
+            <div className="stat-icon"><FaHandshake /></div>
             <h3><AnimatedCounter end={15} suffix="+" /></h3>
             <p>Countries Represented</p>
           </motion.div>
@@ -145,7 +146,7 @@ const InternationalExposure = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="int-stat-item"
           >
-            <div className="stat-icon">🎓</div>
+            <div className="stat-icon"><FaGraduationCap /></div>
             <h3>AI + Global</h3>
             <p>Research & Conferences</p>
           </motion.div>
@@ -177,7 +178,7 @@ const InternationalExposure = () => {
               </div>
               <div className="int-card-footer">
                 <div className="int-card-meta">
-                  <span className="int-location">{program.flag} {program.location}</span>
+                  <span className="int-location">{program.icon} {program.location}</span>
                   <span className="int-year">{program.year}</span>
                 </div>
                 <a 
@@ -197,8 +198,8 @@ const InternationalExposure = () => {
         </div>
       </div>
 
-      {/* Logo Strip */}
-      <div className="int-logo-strip-container">
+
+      {/* <div className="int-logo-strip-container">
         <div className="int-logo-strip">
           <div className="int-logo-track">
             {logos.map((logo, i) => (
@@ -208,7 +209,7 @@ const InternationalExposure = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
