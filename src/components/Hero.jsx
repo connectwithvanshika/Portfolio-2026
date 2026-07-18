@@ -80,7 +80,7 @@ const Hero = () => {
 
           <div className="hero-stats">
             <div className="stat-item">
-              <h3><span>10+</span>+</h3>
+              <h3><span>10</span>+</h3>
               <p>ML Projects Shipped</p>
             </div>
             <div className="stat-item">
