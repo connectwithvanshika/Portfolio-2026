@@ -15,7 +15,7 @@ const Hero = () => {
           </div>
 
           {/* Giant Title "VANSHIKA" - layered behind the photo slightly */}
-          <h1 className="splash-magazine-title">V.</h1>
+          <h1 className="splash-magazine-title">VANSHIKA</h1>
 
           {/* Centered vertical poster image */}
           <div className="splash-poster-container">
