@@ -70,17 +70,6 @@ const experiences = [
   },
 
   {
-    title: 'AWMUN Delegate',
-    org: 'Asia World Model United Nations (AWMUN)',
-    date: '2025',
-    desc: 'Selected as a delegate for the 12th Asia World Model United Nations (AWMUN XII) Conference held in Bali, Indonesia.',
-    proof: {
-      url: 'https://your-awmun-letter-link',
-      label: 'View Acceptance Letter'
-    }
-  },
-
-  {
     title: 'Break The Case Finalist',
     org: 'BITS Pilani, Hyderabad Campus',
     date: 'October 2025',
