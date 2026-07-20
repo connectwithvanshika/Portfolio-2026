@@ -35,40 +35,6 @@ const experiences = [
       label: 'View Offer Letter'
     }
   },
-
-  {
-    title: 'HPAIR Delegate & ACONF Participant',
-    org: 'Harvard Project for Asian International Relations (HPAIR)',
-    date: 'August 2025 – 2026',
-    desc: 'Selected as a global delegate for HPAIR Asia 2025, hosted by Harvard University at the University of Tokyo, Japan, and chosen to participate in ACONF 2026, engaging with emerging leaders and policymakers from around the world.',
-    proof: {
-      url: 'https://your-hpair-letter-link',
-      label: 'View Acceptance Letter'
-    }
-  },
-
-  {
-    title: 'Youth Assembly Delegate',
-    org: 'AFS Youth Assembly — New York University (NYU)',
-    date: '2025',
-    desc: 'Accepted to attend the AFS Youth Assembly 2025, hosted at New York University (NYU), New York, USA, bringing together young leaders and changemakers from around the world.',
-    proof: {
-      url: 'https://your-afs-letter-link',
-      label: 'View Acceptance Letter'
-    }
-  },
-
-  {
-    title: 'AYIMUN Delegate',
-    org: 'Asia World Model United Nations (AYIMUN)',
-    date: '2025',
-    desc: 'Selected as a delegate for the 18th Asia World Model United Nations (AYIMUN) Conference held in Kuala Lumpur, Malaysia.',
-    proof: {
-      url: 'https://your-ayimun-letter-link',
-      label: 'View Acceptance Letter'
-    }
-  },
-
   {
     title: 'Break The Case Finalist',
     org: 'BITS Pilani, Hyderabad Campus',
