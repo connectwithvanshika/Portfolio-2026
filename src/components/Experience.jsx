@@ -30,20 +30,14 @@ const experiences = [
     org: '6D Technologies',
     date: 'June 2026 - July 2026',
     desc: 'Worked as a Software Development Engineer Intern in the Development-Messaging team, contributing to software solutions and gaining hands-on experience in enterprise-scale telecom and messaging systems.',
-    // proof: {
-    //   url: 'https://your-offer-letter-link',
-    //   label: 'View Offer Letter'
-    // }
+
   },
   {
     title: 'Break The Case Finalist',
     org: 'BITS Pilani, Hyderabad Campus',
     date: 'October 2025',
     desc: "Qualified for the Final Round of Break The Case '25, one of India's premier national case competitions organized by the BITS Hyderabad Consulting Group.",
-    proof: {
-      url: 'https://your-certificate-link',
-      label: 'View Certificate'
-    }
+  
   },
 
   {
@@ -51,10 +45,7 @@ const experiences = [
     org: 'Hacktoberfest 2025',
     date: '2025',
     desc: 'Contributed significantly to open-source with 16 merged pull requests across various projects.',
-    proof: {
-      url: 'https://your-hacktoberfest-link',
-      label: 'View Badge'
-    }
+  
   },
 
   {
@@ -62,10 +53,7 @@ const experiences = [
     org: 'National Students\' Space Challenge — IIT Kharagpur',
     date: '2025',
     desc: 'Selected as a finalist for the Paper Presentation at the National Students\' Space Challenge (NSSC) organized by IIT Kharagpur.',
-    proof: {
-      url: 'https://your-nssc-proof-link',
-      label: 'View Certificate'
-    }
+  
   },
 
   {
@@ -73,10 +61,7 @@ const experiences = [
     org: 'Infosys & Google Cloud Skills Boost',
     date: 'May 2025',
     desc: 'Data Science (Infosys): Core concepts of data science, analysis & visualization. Generative AI (Google Cloud): Fundamentals of generative AI, models, and workflows.',
-    proof: {
-      url: 'https://your-certificates-link',
-      label: 'View Credentials'
-    }
+  
   }
 ];
 
