@@ -54,7 +54,7 @@ const programs = [
     desc: "Selected to participate in one of Asia's leading student leadership conferences, engaging with global policymakers, entrepreneurs, and researchers.",
     icon: <FaMapMarkerAlt />,
     location: "New Delhi, India",
-    proof: { label: "View Invitation", url: "#" }
+    proof: { label: "View Invitation", url: "https://drive.google.com/file/d/1nq-H-3hH0j3YyAp29uj8fLhatus5GSy-/view?usp=sharing" }
   },
   {
     name: "ACONF 2026",
@@ -65,7 +65,7 @@ const programs = [
     desc: "Chosen to participate in an international innovation and leadership conference alongside students from multiple countries.",
     icon: <FaMapMarkerAlt />,
     location: "Global",
-    proof: { label: "View Acceptance", url: "#" }
+    proof: { label: "View Acceptance", url: "https://drive.google.com/file/d/1W2ll_TvIvAPrECt2Ott8F68iEa7h4NEP/view?usp=sharing" }
   },
   {
     name: "AYIMUN",
@@ -76,19 +76,22 @@ const programs = [
     desc: "Selected as an international delegate to participate in diplomatic discussions and global policy simulations.",
     icon: <FaMapMarkerAlt />,
     location: "Kuala Lumpur, Malaysia",
-    proof: { label: "View Certificate", url: "#" }
+    proof: { label: "View Certificate", url: "https://drive.google.com/file/d/17B0UCf_z-s-1rDR9Fr9TD9kVMf374Lbn/view?usp=sharing" }
   },
   {
-    name: "Algoverse AI Research Program",
-    org: "Algoverse",
-    category: "AI Research Program",
-    status: "Summer Cohort",
-    year: "2025",
-    desc: "Selected for an international AI research program focused on machine learning, research methodology, and collaborative AI development.",
-    icon: <FaMapMarkerAlt />,
-    location: "International",
-    proof: { label: "View Offer Letter", url: "#" }
+  name: "Asia World Model United Nations (AWMUN XII)",
+  org: "Asia World Model United Nations",
+  category: "International Conference",
+  status: "Selected Delegate",
+  year: "2025",
+  desc: "Selected as an official delegate for the Asia World Model United Nations (AWMUN XII) Conference in Bali, Indonesia, representing India at an international forum focused on diplomacy, global leadership, policy discussions, and cross-cultural collaboration.",
+  icon: <FaMapMarkerAlt />,
+  location: "Bali, Indonesia",
+  proof: {
+    label: "View Acceptance Letter",
+    url: "https://drive.google.com/file/d/14EHwr8v_XTpXOC0KZcLAilS5VT6sHCLj/view?usp=sharing"
   }
+}
 ];
 
 const logos = ['HPAIR', 'ACONF', 'AYIMUN', 'Algoverse', 'HPAIR', 'ACONF', 'AYIMUN', 'Algoverse'];
